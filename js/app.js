@@ -20,19 +20,19 @@ var app = function() {
         {
             title:'youtube',
             description:'watch videos',
-            image: '/images/youtubeLogo.png',
+            image: 'images/youtubeLogo.png',
             url:'https://youtube.com'
         },
         {
             title:'facebook',
             description:'stay in contact with friends',
-            image: '/images/facebookLogo.png',
+            image: 'images/facebookLogo.png',
             url:'https://facebook.com'
         },
         {
             title:'Amazon',
             description:'Buy new things',
-            image: '/images/amazonLogo.png',
+            image: 'images/amazonLogo.png',
             url:'https://amazon.com'
         },     
     ];
@@ -52,7 +52,7 @@ app.prototype.init=function() {
 app.prototype._addEvents = function(){
     //we register here the service worker
     if('serviceWorker' in navigator) { //we check if the feature is available
-        navigator.serviceWorker.register('./serviceWorker.js')
+        navigator.serviceWorker.register('serviceWorker.js')
         .then(function() {
             //it returns an promise 
         });
